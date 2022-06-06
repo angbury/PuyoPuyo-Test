@@ -10129,14 +10129,18 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.GetFsmFloat
         - HutongGames.PlayMaker.Actions.SetVelocity
         - HutongGames.PlayMaker.Actions.GetKeyDown
+        - HutongGames.PlayMaker.Actions.SwipeGestureEvent
+        - HutongGames.PlayMaker.Actions.GetKeyDown
         customNames:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 000000
-        actionStartIndex: 00000000050000000c000000
-        actionHashCodes: 876045025552ad05ff77a904
+        - 
+        - 
+        actionEnabled: 0101010101
+        actionIsOpen: 0000000000
+        actionStartIndex: 00000000050000000c0000000f00000014000000
+        actionHashCodes: 876045025552ad05ff77a904ff8d7d01ff77a904
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -10204,8 +10208,20 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.1
         fsmIntParams: []
         fsmBoolParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         - useVariable: 1
           name: 
           tooltip: 
@@ -10225,12 +10241,17 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - goDropping
-        byteData: 00010000000173000000
+        - 
+        - 
+        - 
+        - goDropping
+        - goDropping
+        byteData: 0001000000017300000012010000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000012000000120000000f00000001000000140000001c0000000f0000000f0000000f0000000700000001000000070000001700000011000000
+        paramDataType: 1400000012000000120000000f00000001000000140000001c0000000f0000000f0000000f00000007000000010000000700000017000000110000000f00000017000000170000001700000017000000070000001700000011000000
         paramName:
         - gameObject
         - fsmName
@@ -10247,8 +10268,16 @@ MonoBehaviour:
         - key
         - sendEvent
         - storeResult
-        paramDataPos: 000000000000000001000000000000000000000001000000000000000100000002000000030000000100000005000000060000000000000000000000
-        paramByteDataSize: 000000000000000000000000000000000100000000000000000000000000000000000000000000000400000001000000040000000000000000000000
+        - minSwipeDistance
+        - swipeLeftEvent
+        - swipeRightEvent
+        - swipeUpEvent
+        - swipeDownEvent
+        - key
+        - sendEvent
+        - storeResult
+        paramDataPos: 00000000000000000100000000000000000000000100000000000000010000000200000003000000010000000500000006000000000000000000000004000000010000000200000003000000040000000a0000000500000001000000
+        paramByteDataSize: 0000000000000000000000000000000001000000000000000000000000000000000000000000000004000000010000000400000000000000000000000000000000000000000000000000000000000000040000000000000000000000
     - name: Dropping
       description: 
       colorIndex: 0
@@ -10280,6 +10309,8 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.FloatOperator
         - HutongGames.PlayMaker.Actions.SetVelocity
         - HutongGames.PlayMaker.Actions.GetKeyUp
+        - HutongGames.PlayMaker.Actions.GetKeyUp
+        - HutongGames.PlayMaker.Actions.Wait
         customNames:
         - 
         - 
@@ -10288,10 +10319,12 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 01010101010101
-        actionIsOpen: 01000000000000
-        actionStartIndex: 0000000003000000060000000b00000010000000150000001c000000
-        actionHashCodes: 2ee0170432d5940281294e04876045020cdb04055552ad05ff77a904
+        - 
+        - 
+        actionEnabled: 010101010101010101
+        actionIsOpen: 000000000000000000
+        actionStartIndex: 0000000003000000060000000b00000010000000150000001c0000001f00000022000000
+        actionHashCodes: 2ee0170432d5940281294e04876045020cdb04055552ad05ff77a904ff77a90448c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -10430,9 +10463,21 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 5
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
           name: 
           tooltip: 
           showInInspector: 0
@@ -10458,12 +10503,14 @@ MonoBehaviour:
         stringParams:
         - 
         - goNormal
-        byteData: 00000200000001010000000173000000
+        - goNormal
+        - goNormal
+        byteData: 000002000000010100000001730000001201000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0f0000000f0000000f000000140000000f00000001000000140000000f0000001800000011000000170000001400000012000000120000000f000000010000000f0000000f000000070000000f00000001000000140000001c0000000f0000000f0000000f0000000700000001000000070000001700000011000000
+        paramDataType: 0f0000000f0000000f000000140000000f00000001000000140000000f0000001800000011000000170000001400000012000000120000000f000000010000000f0000000f000000070000000f00000001000000140000001c0000000f0000000f0000000f00000007000000010000000700000017000000110000000700000017000000110000000f0000001700000001000000
         paramName:
         - min
         - max
@@ -10496,8 +10543,14 @@ MonoBehaviour:
         - key
         - sendEvent
         - storeResult
-        paramDataPos: 0000000001000000020000000000000003000000000000000100000004000000000000000000000000000000020000000000000001000000050000000100000006000000070000000200000008000000060000000300000000000000090000000a0000000b000000070000000b0000000c0000000100000001000000
-        paramByteDataSize: 00000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000004000000000000000100000000000000000000000000000000000000000000000400000001000000040000000000000000000000
+        - key
+        - sendEvent
+        - storeResult
+        - time
+        - finishEvent
+        - realTime
+        paramDataPos: 0000000001000000020000000000000003000000000000000100000004000000000000000000000000000000020000000000000001000000050000000100000006000000070000000200000008000000060000000300000000000000090000000a0000000b000000070000000b0000000c00000001000000010000001000000002000000020000000c0000000300000014000000
+        paramByteDataSize: 00000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000004000000000000000100000000000000000000000000000000000000000000000400000001000000040000000000000000000000040000000000000000000000000000000000000001000000
     - name: Initializing
       description: 
       colorIndex: 0
@@ -10879,14 +10932,20 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.GetKeyDown
         - HutongGames.PlayMaker.Actions.GetKeyDown
         - HutongGames.PlayMaker.Actions.GetPosition
+        - HutongGames.PlayMaker.Actions.SwipeGestureEvent
+        - HutongGames.PlayMaker.Actions.GetKeyDown
+        - HutongGames.PlayMaker.Actions.GetKeyDown
         customNames:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 000000
-        actionStartIndex: 000000000300000006000000
-        actionHashCodes: ff77a904ff77a9045552ad05
+        - 
+        - 
+        - 
+        actionEnabled: 010101010101
+        actionIsOpen: 000000010101
+        actionStartIndex: 0000000003000000060000000d0000001200000015000000
+        actionHashCodes: ff77a904ff77a9045552ad05ff8d7d01ff77a904ff77a904
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -10928,8 +10987,26 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.1
         fsmIntParams: []
         fsmBoolParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         - useVariable: 1
           name: 
           tooltip: 
@@ -10956,12 +11033,18 @@ MonoBehaviour:
         stringParams:
         - goLeft
         - goRight
-        byteData: 61000000640000000000000001
+        - goLeft
+        - goRight
+        - 
+        - 
+        - goRight
+        - goLeft
+        byteData: 610000006400000000000000011301000014010000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 070000001700000011000000070000001700000011000000140000001c0000000f0000000f0000000f0000000700000001000000
+        paramDataType: 070000001700000011000000070000001700000011000000140000001c0000000f0000000f0000000f00000007000000010000000f00000017000000170000001700000017000000070000001700000011000000070000001700000011000000
         paramName:
         - key
         - sendEvent
@@ -10976,8 +11059,19 @@ MonoBehaviour:
         - z
         - space
         - everyFrame
-        paramDataPos: 0000000000000000000000000400000001000000010000000000000000000000000000000100000002000000080000000c000000
-        paramByteDataSize: 04000000000000000000000004000000000000000000000000000000000000000000000000000000000000000400000001000000
+        - minSwipeDistance
+        - swipeLeftEvent
+        - swipeRightEvent
+        - swipeUpEvent
+        - swipeDownEvent
+        - key
+        - sendEvent
+        - storeResult
+        - key
+        - sendEvent
+        - storeResult
+        paramDataPos: 0000000000000000000000000400000001000000010000000000000000000000000000000100000002000000080000000c00000003000000020000000300000004000000050000000d0000000600000002000000110000000700000003000000
+        paramByteDataSize: 040000000000000000000000040000000000000000000000000000000000000000000000000000000000000004000000010000000000000000000000000000000000000000000000040000000000000000000000040000000000000000000000
     - name: Left
       description: 
       colorIndex: 0
@@ -12247,6 +12341,8 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.GetChildNum
         - HutongGames.PlayMaker.Actions.GetChildNum
         - HutongGames.PlayMaker.Actions.GetKeyDown
+        - HutongGames.PlayMaker.Actions.GetKeyDown
+        - HutongGames.PlayMaker.Actions.SwipeGestureEvent
         - HutongGames.PlayMaker.Actions.FindGameObject
         - HutongGames.PlayMaker.Actions.GetFsmFloat
         - HutongGames.PlayMaker.Actions.GetFsmFloat
@@ -12261,10 +12357,12 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101010101
-        actionIsOpen: 0000000000000000
-        actionStartIndex: 000000000300000006000000090000000c00000011000000160000001b000000
-        actionHashCodes: 280cdd05280cdd05ff77a904786b390287604502876045020cdb04050cdb0405
+        - 
+        - 
+        actionEnabled: 01010101010101010101
+        actionIsOpen: 00000000000000000000
+        actionStartIndex: 000000000300000006000000090000000c0000001100000014000000190000001e00000023000000
+        actionHashCodes: 280cdd05280cdd05ff77a904ff77a904ff8d7d01786b390287604502876045020cdb04050cdb0405
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -12366,6 +12464,12 @@ MonoBehaviour:
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.1
         - useVariable: 1
           name: orginal x clamp
           tooltip: 
@@ -12434,6 +12538,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -12441,12 +12551,17 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - rotate
-        byteData: 77000000000000000000000000000000
+        - rotate
+        - 
+        - 
+        - rotate
+        - 
+        byteData: 7700000011010000000000000000000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000010000000130000001400000010000000130000000700000017000000110000001200000012000000130000001400000012000000120000000f000000010000001400000012000000120000000f000000010000000f0000000f000000070000000f000000010000000f0000000f000000070000000f00000001000000
+        paramDataType: 1400000010000000130000001400000010000000130000000700000017000000110000000700000017000000110000000f000000170000001700000017000000170000001200000012000000130000001400000012000000120000000f000000010000001400000012000000120000000f000000010000000f0000000f000000070000000f000000010000000f0000000f000000070000000f00000001000000
         paramName:
         - gameObject
         - childIndex
@@ -12457,6 +12572,14 @@ MonoBehaviour:
         - key
         - sendEvent
         - storeResult
+        - key
+        - sendEvent
+        - storeResult
+        - minSwipeDistance
+        - swipeLeftEvent
+        - swipeRightEvent
+        - swipeUpEvent
+        - swipeDownEvent
         - objectName
         - withTag
         - store
@@ -12480,8 +12603,8 @@ MonoBehaviour:
         - operation
         - storeResult
         - everyFrame
-        paramDataPos: 00000000000000000000000001000000010000000100000000000000000000000000000000000000010000000200000002000000020000000300000000000000040000000300000004000000050000000100000005000000020000000300000006000000040000000a00000005000000060000000b000000070000000f000000
-        paramByteDataSize: 0000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000100000000000000000000000400000000000000010000000000000000000000040000000000000001000000
+        paramDataPos: 00000000000000000000000001000000010000000100000000000000000000000000000004000000010000000100000000000000020000000300000004000000050000000000000001000000020000000200000002000000030000000100000008000000030000000400000005000000020000000900000003000000040000000a000000050000000e00000006000000070000000f0000000800000013000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000004000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000100000000000000000000000400000000000000010000000000000000000000040000000000000001000000
     - name: Up
       description: 
       colorIndex: 1
@@ -14758,7 +14881,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 01010101010101
-        actionIsOpen: 00000000000001
+        actionIsOpen: 00000000000000
         actionStartIndex: 0000000002000000040000000b0000000f000000130000001b000000
         actionHashCodes: 5ac852045ac852045552ad052a6e8a002a6e8a00f6e5be0348c01101
         unityObjectParams: []
@@ -17483,6 +17606,8 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.GetKeyDown
+        - HutongGames.PlayMaker.Actions.SwipeGestureEvent
+        - HutongGames.PlayMaker.Actions.GetKeyDown
         - HutongGames.PlayMaker.Actions.GetPosition
         - HutongGames.PlayMaker.Actions.FloatAdd
         - HutongGames.PlayMaker.Actions.FloatAdd
@@ -17493,10 +17618,12 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101
-        actionIsOpen: 0100000000
-        actionStartIndex: 00000000030000000a0000000e00000012000000
-        actionHashCodes: ff77a9045552ad052a6e8a002a6e8a00f6e5be03
+        - 
+        - 
+        actionEnabled: 01010101010101
+        actionIsOpen: 00000000000000
+        actionStartIndex: 0000000003000000080000000b00000012000000160000001a000000
+        actionHashCodes: ff77a904ff8d7d01ff77a9045552ad052a6e8a002a6e8a00f6e5be03
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -17528,6 +17655,12 @@ MonoBehaviour:
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.1
         - useVariable: 1
           name: x
           tooltip: 
@@ -17596,6 +17729,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params:
         - useVariable: 1
@@ -17615,13 +17754,26 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - rotate
-        byteData: 77000000000000000101000100000000000100
+        - 
+        - 
+        - rotate
+        - 
+        - rotate
+        byteData: 7700000011010000000000000101000100000000000100
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 070000001700000011000000140000001c0000000f0000000f0000000f00000007000000010000000f0000000f00000001000000010000000f0000000f0000000100000001000000140000001c0000000f0000000f0000000f000000070000000100000001000000
+        paramDataType: 0700000017000000110000000f00000017000000170000001700000017000000070000001700000011000000140000001c0000000f0000000f0000000f00000007000000010000000f0000000f00000001000000010000000f0000000f0000000100000001000000140000001c0000000f0000000f0000000f000000070000000100000001000000
         paramName:
+        - key
+        - sendEvent
+        - storeResult
+        - minSwipeDistance
+        - swipeLeftEvent
+        - swipeRightEvent
+        - swipeUpEvent
+        - swipeDownEvent
         - key
         - sendEvent
         - storeResult
@@ -17648,8 +17800,8 @@ MonoBehaviour:
         - space
         - everyFrame
         - lateUpdate
-        paramDataPos: 000000000000000000000000000000000000000000000000010000000200000004000000080000000300000004000000090000000a00000005000000060000000b0000000c00000001000000010000000700000008000000090000000d0000001100000012000000
-        paramByteDataSize: 0400000000000000000000000000000000000000000000000000000000000000040000000100000000000000000000000100000001000000000000000000000001000000010000000000000000000000000000000000000000000000040000000100000001000000
+        paramDataPos: 00000000000000000000000000000000010000000200000003000000040000000400000005000000010000000000000000000000010000000200000003000000080000000c00000004000000050000000d0000000e00000006000000070000000f00000010000000010000000100000008000000090000000a000000110000001500000016000000
+        paramByteDataSize: 04000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000040000000100000000000000000000000100000001000000000000000000000001000000010000000000000000000000000000000000000000000000040000000100000001000000
     - name: Cooler 2
       description: 
       colorIndex: 0
@@ -17675,6 +17827,8 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.GetKeyDown
+        - HutongGames.PlayMaker.Actions.SwipeGestureEvent
+        - HutongGames.PlayMaker.Actions.GetKeyDown
         - HutongGames.PlayMaker.Actions.GetPosition
         - HutongGames.PlayMaker.Actions.FloatAdd
         - HutongGames.PlayMaker.Actions.FloatAdd
@@ -17685,10 +17839,12 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101
-        actionIsOpen: 0100000000
-        actionStartIndex: 00000000030000000a0000000e00000012000000
-        actionHashCodes: ff77a9045552ad052a6e8a002a6e8a00f6e5be03
+        - 
+        - 
+        actionEnabled: 01010101010101
+        actionIsOpen: 01010100000000
+        actionStartIndex: 0000000003000000080000000b00000012000000160000001a000000
+        actionHashCodes: ff77a904ff8d7d01ff77a9045552ad052a6e8a002a6e8a00f6e5be03
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -17720,6 +17876,12 @@ MonoBehaviour:
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.1
         - useVariable: 1
           name: x
           tooltip: 
@@ -17788,6 +17950,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params:
         - useVariable: 1
@@ -17807,13 +17975,26 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - rotate
-        byteData: 77000000000000000101000100000000000100
+        - 
+        - 
+        - rotate
+        - 
+        - rotate
+        byteData: 7700000011010000000000000101000100000000000100
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 070000001700000011000000140000001c0000000f0000000f0000000f00000007000000010000000f0000000f00000001000000010000000f0000000f0000000100000001000000140000001c0000000f0000000f0000000f000000070000000100000001000000
+        paramDataType: 0700000017000000110000000f00000017000000170000001700000017000000070000001700000011000000140000001c0000000f0000000f0000000f00000007000000010000000f0000000f00000001000000010000000f0000000f0000000100000001000000140000001c0000000f0000000f0000000f000000070000000100000001000000
         paramName:
+        - key
+        - sendEvent
+        - storeResult
+        - minSwipeDistance
+        - swipeLeftEvent
+        - swipeRightEvent
+        - swipeUpEvent
+        - swipeDownEvent
         - key
         - sendEvent
         - storeResult
@@ -17840,8 +18021,8 @@ MonoBehaviour:
         - space
         - everyFrame
         - lateUpdate
-        paramDataPos: 000000000000000000000000000000000000000000000000010000000200000004000000080000000300000004000000090000000a00000005000000060000000b0000000c00000001000000010000000700000008000000090000000d0000001100000012000000
-        paramByteDataSize: 0400000000000000000000000000000000000000000000000000000000000000040000000100000000000000000000000100000001000000000000000000000001000000010000000000000000000000000000000000000000000000040000000100000001000000
+        paramDataPos: 00000000000000000000000000000000010000000200000003000000040000000400000005000000010000000000000000000000010000000200000003000000080000000c00000004000000050000000d0000000e00000006000000070000000f00000010000000010000000100000008000000090000000a000000110000001500000016000000
+        paramByteDataSize: 04000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000040000000100000000000000000000000100000001000000000000000000000001000000010000000000000000000000000000000000000000000000040000000100000001000000
     - name: Cooler 3
       description: 
       colorIndex: 0
@@ -17867,6 +18048,8 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.GetKeyDown
+        - HutongGames.PlayMaker.Actions.SwipeGestureEvent
+        - HutongGames.PlayMaker.Actions.GetKeyDown
         - HutongGames.PlayMaker.Actions.GetPosition
         - HutongGames.PlayMaker.Actions.FloatAdd
         - HutongGames.PlayMaker.Actions.FloatAdd
@@ -17877,10 +18060,12 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101
-        actionIsOpen: 0100000000
-        actionStartIndex: 00000000030000000a0000000e00000012000000
-        actionHashCodes: ff77a9045552ad052a6e8a002a6e8a00f6e5be03
+        - 
+        - 
+        actionEnabled: 01010101010101
+        actionIsOpen: 01010100000000
+        actionStartIndex: 0000000003000000080000000b00000012000000160000001a000000
+        actionHashCodes: ff77a904ff8d7d01ff77a9045552ad052a6e8a002a6e8a00f6e5be03
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -17912,6 +18097,12 @@ MonoBehaviour:
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.1
         - useVariable: 1
           name: x
           tooltip: 
@@ -17980,6 +18171,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params:
         - useVariable: 1
@@ -17999,13 +18196,26 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - rotate
-        byteData: 77000000000000000101000100000000000100
+        - 
+        - 
+        - rotate
+        - 
+        - rotate
+        byteData: 7700000011010000000000000101000100000000000100
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 070000001700000011000000140000001c0000000f0000000f0000000f00000007000000010000000f0000000f00000001000000010000000f0000000f0000000100000001000000140000001c0000000f0000000f0000000f000000070000000100000001000000
+        paramDataType: 0700000017000000110000000f00000017000000170000001700000017000000070000001700000011000000140000001c0000000f0000000f0000000f00000007000000010000000f0000000f00000001000000010000000f0000000f0000000100000001000000140000001c0000000f0000000f0000000f000000070000000100000001000000
         paramName:
+        - key
+        - sendEvent
+        - storeResult
+        - minSwipeDistance
+        - swipeLeftEvent
+        - swipeRightEvent
+        - swipeUpEvent
+        - swipeDownEvent
         - key
         - sendEvent
         - storeResult
@@ -18032,8 +18242,8 @@ MonoBehaviour:
         - space
         - everyFrame
         - lateUpdate
-        paramDataPos: 000000000000000000000000000000000000000000000000010000000200000004000000080000000300000004000000090000000a00000005000000060000000b0000000c00000001000000010000000700000008000000090000000d0000001100000012000000
-        paramByteDataSize: 0400000000000000000000000000000000000000000000000000000000000000040000000100000000000000000000000100000001000000000000000000000001000000010000000000000000000000000000000000000000000000040000000100000001000000
+        paramDataPos: 00000000000000000000000000000000010000000200000003000000040000000400000005000000010000000000000000000000010000000200000003000000080000000c00000004000000050000000d0000000e00000006000000070000000f00000010000000010000000100000008000000090000000a000000110000001500000016000000
+        paramByteDataSize: 04000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000040000000100000000000000000000000100000001000000000000000000000001000000010000000000000000000000000000000000000000000000040000000100000001000000
     - name: Cooler 4
       description: 
       colorIndex: 0
@@ -18059,6 +18269,8 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.GetKeyDown
+        - HutongGames.PlayMaker.Actions.SwipeGestureEvent
+        - HutongGames.PlayMaker.Actions.GetKeyDown
         - HutongGames.PlayMaker.Actions.GetPosition
         - HutongGames.PlayMaker.Actions.FloatAdd
         - HutongGames.PlayMaker.Actions.FloatAdd
@@ -18069,10 +18281,12 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101
-        actionIsOpen: 0100000000
-        actionStartIndex: 00000000030000000a0000000e00000012000000
-        actionHashCodes: ff77a9045552ad052a6e8a002a6e8a00f6e5be03
+        - 
+        - 
+        actionEnabled: 01010101010101
+        actionIsOpen: 01010100000000
+        actionStartIndex: 0000000003000000080000000b00000012000000160000001a000000
+        actionHashCodes: ff77a904ff8d7d01ff77a9045552ad052a6e8a002a6e8a00f6e5be03
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -18104,6 +18318,12 @@ MonoBehaviour:
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.1
         - useVariable: 1
           name: x
           tooltip: 
@@ -18172,6 +18392,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params:
         - useVariable: 1
@@ -18191,13 +18417,26 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - rotate
-        byteData: 77000000000000000101000100000000000100
+        - 
+        - 
+        - rotate
+        - 
+        - rotate
+        byteData: 7700000011010000000000000101000100000000000100
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 070000001700000011000000140000001c0000000f0000000f0000000f00000007000000010000000f0000000f00000001000000010000000f0000000f0000000100000001000000140000001c0000000f0000000f0000000f000000070000000100000001000000
+        paramDataType: 0700000017000000110000000f00000017000000170000001700000017000000070000001700000011000000140000001c0000000f0000000f0000000f00000007000000010000000f0000000f00000001000000010000000f0000000f0000000100000001000000140000001c0000000f0000000f0000000f000000070000000100000001000000
         paramName:
+        - key
+        - sendEvent
+        - storeResult
+        - minSwipeDistance
+        - swipeLeftEvent
+        - swipeRightEvent
+        - swipeUpEvent
+        - swipeDownEvent
         - key
         - sendEvent
         - storeResult
@@ -18224,8 +18463,8 @@ MonoBehaviour:
         - space
         - everyFrame
         - lateUpdate
-        paramDataPos: 000000000000000000000000000000000000000000000000010000000200000004000000080000000300000004000000090000000a00000005000000060000000b0000000c00000001000000010000000700000008000000090000000d0000001100000012000000
-        paramByteDataSize: 0400000000000000000000000000000000000000000000000000000000000000040000000100000000000000000000000100000001000000000000000000000001000000010000000000000000000000000000000000000000000000040000000100000001000000
+        paramDataPos: 00000000000000000000000000000000010000000200000003000000040000000400000005000000010000000000000000000000010000000200000003000000080000000c00000004000000050000000d0000000e00000006000000070000000f00000010000000010000000100000008000000090000000a000000110000001500000016000000
+        paramByteDataSize: 04000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000040000000100000000000000000000000100000001000000000000000000000001000000010000000000000000000000000000000000000000000000040000000100000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
